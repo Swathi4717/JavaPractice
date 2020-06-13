@@ -34,10 +34,10 @@ public class TwoSum {
 		int[] k = new int[2];
 
 		for(int i=0; i<nums.length; i++) {
-			for(int j=0; j<nums.length; j++)
-				if(i!=j && nums[i] + nums[j] == target) {
+			for(int j=1; j<nums.length; j++)
+				if(nums[i] + nums[j] == target) {
 					k[0] = j;
-					k[1] = 1;
+					k[1] = i;
 				}
 
 		}
